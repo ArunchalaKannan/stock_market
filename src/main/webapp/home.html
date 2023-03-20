@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Home</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="Home.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body onload="auto()">
+<div id="whole">
+<div id="side">
+<br> <br><br>
+  <input type='radio' name="rd" onchange="Allstock()" id='Allstock' checked>
+  <label for='Allstock'><span class="material-symbols-outlined md-60"> info </span></label>
+  <br> <br><br> <br>
+  <input type='radio' name="rd" onchange="stockChart()" id='Stockchart'>
+    <label for='Stockchart'><span class="material-symbols-outlined md-60"> chart_data </span></label>
+    <br> <br><br> <br>
+    <input type='radio' name="rd" onchange="Analysischart()" id='Analysischart'>
+    <label for='Analysischart'><span class="material-symbols-outlined md-60"> bar_chart</span></label>
+     <br> <br><br> <br>
+    <input type='radio' name="rd" onchange="allChart()" id='allChart'>
+    <label for='allChart'><span class="material-symbols-outlined md-60"> pie_chart</span></label>
+     <br> <br><br> <br>
+     <input type='radio' name="rd" onchange="comparision()" id='comparision'>
+    <label for='comparision'><span class="material-symbols-outlined" style="font-size:60px;">swords</span></label>
+     <br> <br><br> <br>
+     <input type='radio' name="rd" onchange="bank()" id='balance'>
+    <label for='balance'><span class="material-symbols-outlined md-60"> account_balance</span></label>
+     <br> <br><br> <br>
+     <input type='radio' name="rd" onchange="cart()" id='shopping'>
+    <label for='shopping'><span class="material-symbols-outlined md-60"> shopping_cart</span></label>
+     <br> <br><br> <br>
+    <input type='radio' name="rd" onchange="pro()" id='accounts'>
+    <label for='accounts'><span class="material-symbols-outlined md-60"> account_circle</span></label>
+    <br> <br><br> <br>
+    <input type='radio' name="rd" onchange="logout()" id='Lock'>
+    <label for='Lock'><span class="material-symbols-outlined md-60"> Lock</span></label>
+ <br> <br>
+</div>
+</div>
+<div id="rside"><iframe id="get" src='./viewStock.html' frameborder='0'></iframe></div>
+<script type="text/javascript" src="Home.js"></script>
+</body>
+</html>

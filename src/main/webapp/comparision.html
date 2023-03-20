@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+ <link href="comparision.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+</head>
+<body>
+<center>
+<h1 id="top">Comparison Stocks</h1>
+    <div style="margin-left:19%;display:flex;width:100%;height:20%;">
+    <div class="hell"><p style="text-align:center;font-size:30px;" id="hc"></p></div>
+	<div id="container1">
+	
+		<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+			<rect id="base" x="100" y="400" width="300" height="50" rx="5" />
+			<path id="connector" d="M 225 150 Q 225 100 175 100 L 175 250" />
+			<path id="connector" d="M 275 150 Q 275 100 325 100 L 325 250" />
+      <g>
+			<rect id="scale" x="200" y="150" width="100" height="250" rx="10" ></rect></g>
+      	<foreignObject x="219" y="236" width="60" height="60"><button onclick="start()">VS</button></foreignObject> 
+			<foreignObject id="left-pan" x="145" y="245" width="60" height="60">
+				<input type="number" onchange="right(this.value)" id="left-pan-input" style="width: 100%; height: 100%; border: none; outline: none; font-size: 20px; text-align: center;" min="1" max="30" value="1">
+			</foreignObject>
+			<foreignObject id="right-pan" x="295" y="245" width="60" height="60">
+				<input type="number" onchange="left(this.value)" id="right-pan-input" style="width: 100%; height: 100%; border: none; outline: none; font-size: 20px; text-align: center;" min="1" max="30" value="1">
+			</foreignObject>
+    <path id="left-connector" d="M -20000 450 L 141 275" stroke="black" stroke-width="3"/>
+    <path id="right-connector" d="M 20000 450 L 354 275" stroke="black" stroke-width="3"/>
+    
+		</svg>
+    
+	</div>
+	<div class="hell"><p style="text-align:center;font-size:30px;" id="ch"></p></div>
+	</div>
+    </center>
+  <div id="container">
+  <div id="chartdiv"></div>
+  </div>
+  <script src="comparision.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+@charset "UTF-8";
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+#top{
+	margin-bottom:9%;
+}
+#container{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	height: 600px;
+	 width: 100%;
+	 border:1px solid black;
+     border-radius:50px;
+	 -webkit-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.75);
+     -moz-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.75);
+     box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.75);
+}
+ html,body{
+      width:100%;
+      height:100%;
+      padding:0px;
+      overflow:hidden;
+    }
+		#container1{
+		   margin-top:-9%;
+			width: 500px;
+			height: 400px;
+			background-color: #f7f7f7;
+			position: relative;
+		}
+
+		#base {
+			fill: #333663;
+		}
+    #right-pan{
+      border:5px solid black;
+      border-radius:50%;
+    }
+    input{
+    text-align: center;
+  outline: none;
+  cursor: default;
+	 color: transparent;
+	 text-shadow: 0px 0px black;
+    }
+     #left-pan{
+      border:5px solid black;
+       border-radius:50%;
+    }
+		#scale {
+			fill: #ffffff;
+			stroke: #333333;
+			stroke-width: 5;
+			transform-origin: center bottom;
+			transform: rotate(0deg);
+			transition: transform 2s ease-in-out;
+			animation: bounce 2s ease-in-out infinite;
+		}
+
+		@keyframes bounce {
+			0% {
+				transform: rotate(0deg) translateY(0);
+			}
+			50% {
+				transform: rotate(0deg) translateY(-10px);
+			}
+			100% {
+				transform: rotate(0deg) translateY(0);
+			}
+		}
+
+		#left-pan {
+			fill: #ffffff;
+			stroke: #ffffff;
+			stroke-width: 5;
+			transform-origin: center bottom;
+			transform: rotate(-1deg);
+			transition: transform 2s ease-in-out;
+		}
+
+		#right-pan {
+			fill: #ffffff;
+			stroke: #ffffff;
+			stroke-width: 5;
+			transform-origin: center bottom;
+			transform: rotate(1deg);
+			transition: transform 2s ease-in-out;
+		}
+
+		#connector {
+			stroke: #333663;
+			stroke-width: 779px;
+			fill: none;
+		}
+		button{
+		background: transparent;
+		width:60px;
+		font-size:30px;
+		height:60px;
+		border:transparent;
+		border-radius:50%;
+		}
+		
+		.hell{
+		width:300px;
+		height:200px;
+		border:6px solid #333663;
+		border-radius:50%;
+		display: flex; 
+        justify-content: center;
+        align-items: center;
+        }
+		
+		

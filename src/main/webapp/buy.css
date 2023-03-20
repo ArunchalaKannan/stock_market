@@ -1,0 +1,409 @@
+@charset "UTF-8";
+html,body{
+	overflow:hidden;
+	height:100%;
+	width:100%;
+	background:#F2ECFD;
+}
+h2{
+	color:black;
+}
+.to{
+	margin:20px;
+	height:50px;
+	width:100px;
+	border:1px solid black;
+	border-radius:25px;
+}
+#top{
+	display:flex;
+	justify-content: space-between;
+	height:7vh;
+	width:100%;
+}
+#container{
+	background:#F2ECFD;
+	height:90vh;
+	width:100vw;
+	display: grid;
+    grid-template-columns:repeat(4,1fr);
+    overflow:scroll;
+}
+.product-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  box-shadow: 8px 8px 8px #ccc;
+  width: 20vw;
+  height: 200px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.product-image {
+  flex-basis: 30%;
+  overflow: hidden;
+}
+
+.product-image img {
+    width: 42%;
+    height: auto;
+    display: block;
+    margin: 20%;
+    margin-top: -3%;
+}
+
+.product-details {
+  flex-basis: 70%;
+}
+
+.product-name {
+  margin: 0 0 10px;
+}
+
+.product-id {
+  font-size: 16px;
+  margin: 0 0 5px;
+}
+
+.product-quantity {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.product-quantity label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.product-quantity input {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  outline: none;
+}
+
+.buy-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #0062cc;
+}
+input{
+	cursor: default;
+	 color: transparent;
+	 text-shadow: 0px 0px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-box1 {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  box-shadow: 8px 8px 8px #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  width: 14vw;
+  height: 46vh;
+}
+
+.product-image1 {
+  width: 100%;
+  height: 50%;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.product-image1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.product-name1 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.product-id1,
+.product-price1,
+.product-stock1 {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+
+.product-price1 {
+  font-weight: bold;
+}
+
+.quantity-input1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.quantity-controls1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #cccccc;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.quantity-controls1 button {
+  background-color: transparent;
+  border: none;
+  color: #888888;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0 5px;
+  transition: color 0.3s ease;
+}
+
+.quantity-controls1 button:hover {
+  color: #555555;
+}
+
+.quantity-controls1 input {
+  width: 40px;
+  height: 25px;
+  border: none;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+.buy-button1 {
+  background-color: #f9a826;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button1:hover {
+  background-color: #ffbb52;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.to:after {
+  --slice-0: inset(50% 50% 50% 50%);
+  --slice-1: inset(80% -6px 0 0);
+  --slice-2: inset(50% -6px 30% 0);
+  --slice-3: inset(10% -6px 85% 0);
+  --slice-4: inset(40% -6px 43% 0);
+  --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'Mysty';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+.to:hover:after {
+  animation: 2s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+
+
+
+
+
+.buttons-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+button {
+  background: white;
+  border: solid 2px black;
+
+  font-size: 1rem;
+}
+
+.to {
+  font-size: 2rem;
+  background: hsl(190deg, 30%, 15%);
+  color: hsl(190deg, 10%, 95%);
+  
+  box-shadow: 0 0px 0px hsla(190deg, 15%, 5%, .2);
+  transfrom: translateY(0);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+  --dur: .15s;
+  --delay: .15s;
+  --radius: 16px;
+  
+  transition:
+    border-top-left-radius var(--dur) var(--delay) ease-out,
+    border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+    border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+    border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+    box-shadow calc(var(--dur) * 4) ease-out,
+    transform calc(var(--dur) * 4) ease-out,
+    background calc(var(--dur) * 4) steps(4, jump-end);
+}
+
+.to:hover,
+.to:focus {
+  box-shadow: 0 4px 8px hsla(190deg, 15%, 5%, .2);
+  transform: translateY(-4px);
+  background: hsl(230deg, 50%, 45%);
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}

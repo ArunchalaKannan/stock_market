@@ -1,0 +1,339 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,body{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  background:#F2ECFD;
+}
+.fa-solid, .fas {
+    font-weight: 450;
+}
+section.education {
+	-webkit-box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+    -moz-box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+      box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+    height: 50vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    background:#fff;
+    align-items: center;
+  }
+  .education .cards {
+  -webkit-box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+    -moz-box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+      box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+  }
+  
+  .education-card {
+    position: relative;
+    margin: 5px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: rgb(30, 30, 100);
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg);
+    background-repeat: no-repeat;
+    flex: 0.5;
+    transition: flex 0.5s ease-in;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px !important;
+    color: #23b3e4;
+    font-size: 25px;
+    border-radius: 50%;
+    font-family: "Averia Serif Libre";
+    font-weight: 300;
+    position: absolute;
+    right: 0;
+    opacity: 0.5;
+    transition: all ease-in-out 0.5s;
+  }
+  
+  .education-card.active .label {
+    bottom: 10px;
+    left: 25px;
+    height: 150px !important;
+    border-radius: 10px;
+    font-size: 125px;
+    width: 35px;
+    opacity: 1;
+  }
+  
+  .education-card.active {
+    flex:3.4;
+  }
+  
+  .education-card:not(.active) .label {
+    bottom: 5px;
+    left: 5px;
+  }
+  
+  .info {
+    color: white;
+    background: #23b3e4;
+    float: right;
+    width: 76%;
+    height: 100%;
+    clip-path: polygon(calc(100% - 42.3vw) 0, 100% 0, 100% 100%, calc(100% - 13vw) 100%);
+    shape-outside: polygon(calc(100% - 42.3vw) 0, 100% 0, 100% 100%, calc(100% - 13vw) 100%);
+    text-align: right;
+    padding-right: 2vw;
+    padding-top:10px;
+    transition: opacity 0.5s ease-in-out .3s;
+  }
+  
+  .active .info {
+    opacity: 1;
+  }
+  
+  .education-card:not(.active) .info {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  h1 {
+    font-size: 25px;
+    color: black;
+    font-weight: 450;
+    font-family: "Averia Serif Libre" !important;
+  }
+  h1::first-letter{
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 19.5px;
+    font-family: "Poppins", sans-serif;
+  }
+ 
+  
+  .icon {
+    background: white;
+    position: absolute;
+    top: 7.5px;
+    left: 5px;
+    bottom: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 50%;
+    color: #23b3e4;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+    z-index:1;
+  }
+  
+  .education-card.active .icon {
+    opacity: 1;
+    top: -25px;
+    left: -5px;
+    bottom: 0;
+    right: 0;
+    width: 75px;
+    height: 90px;
+    font-size: 30px;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+  }
+  
+  
+  .education-card .icon fa-icon {
+    transition: padding-top ease-in-out 0.5s;
+  }
+
+  .education-card.active .icon fa-icon {
+    padding-top: 20px;
+  }
+
+  .info img{
+    border-radius: 5px;
+    width:50px;
+    opacity: 0;
+  }
+  .education-card.active .info img{
+    opacity:1;
+    
+  }
+  
+
+
+
+
+  @media screen and (width>=00px){
+    .info .col-sm-6{
+      width:68.45%;
+    }
+    .info{
+      clip-path:none !important;
+      background:transparent;
+      display:flex;
+      flex-direction:column;
+      align-items:flex-end;
+      flex-direction:column;
+      justify-content:flex-start !important;
+      
+      text-align: center;
+    }
+    h1{
+      color:#23b3e4;
+      font-size:40px;
+    }
+    .education-card.active .icon{
+      width:64px;
+      height:65px;
+      top:0;
+      left:0;
+      border-top-left-radius:0;
+      font-size:50px;
+    }
+    .education-card.active .icon fa-icon{
+      padding:0;
+    }
+    .education-card.active .label{
+      font-size:75px;
+      bottom:-20px;
+      left:20px;
+    }
+
+    .info img{
+      width:32.5px;  
+    }
+
+    .education-card:last-child .info img{
+      filter:invert(100%);
+    }
+
+    .education-card:not(.active) .icon{
+      left:2px;
+    }
+
+    .education-card:not(.active) .label{
+      font-size:17.5px;
+      width:10px;
+      left:2px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ .profile-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  width: 490px;
+  -webkit-box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+    -moz-box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+      box-shadow: -1px 1px 10px 10px rgba(255,255,255,0.75);
+}
+
+.company-info {
+  background-color: rgb(30,30,100);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.company-info h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.user-info {
+  display: flex;
+  padding: 20px;
+}
+
+.user-info img {
+  border-radius: 50%;
+  height: 160px;
+  margin-right: 20px;
+  width: 150px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-details h3 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.user-details p {
+  align-items: center;
+  display: flex;
+  font-size: 25px;
+  margin: 0 0 5px 0;
+}
+
+.user-details p i {
+  margin-right: 10px;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .price-change {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.price-change-label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.price-change-value {
+  color: green;
+  font-weight: bold;
+}

@@ -1,0 +1,209 @@
+@charset "UTF-8";
+html, body,#container {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow:hidden;
+      background-color:#F2ECFD;
+ 	}
+      img{
+      width:100%;
+      height:100%;
+      }
+      #lt{
+      margin-top:-3%;
+      height:130%;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+      
+      .top-section {
+        display: flex;
+        justify-content: space-between;
+        background-color:F2ECFD;
+        height: 30vh;
+        padding: 1rem;
+      }
+      
+      .small-box {
+        width: calc(33.33% - 2rem/3);
+        height: 100%;
+        background-color:white;
+        color:rgb(30, 30, 90);
+        border: 1px solid black;
+        box-sizing: border-box;
+        overflow:hidden;
+      }
+      
+      .bottom-section {
+        display: flex;
+        flex-direction: column;
+        background-color:F2ECFD;
+        height: 70vh;
+        padding: 1rem;
+      }
+      #return{
+      padding-top:5%;
+      }
+      .large-box {
+        width: 100%;
+        height: calc(66.66% - 4rem/9);
+        background-color:white;
+        border: 1px solid black;
+        box-sizing: border-box;
+        Display:flex;
+        overflow:hidden;
+      }
+      
+      #temp{
+		margin-left:6%;
+		width: 80%;
+    	height: 80%;
+	}
+	   iframe{
+		width: 100%;
+    	height: 100%;
+	}
+	.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+
+.cf:after{
+    clear:both;
+}
+
+.cf{
+    zoom:1;
+}    
+/* Form wrapper styling */
+
+.search-wrapper {
+    width: 450px;
+    border-radius: 40px;
+  background: transparent;
+    box-shadow: 0 4px 20px -2pxhsl(227,12%,30%,1);
+}
+
+/* Form text input */
+
+.search-wrapper input {
+	padding-left: 20px;
+    width: 330px;
+    height: 20px;
+    padding: 10px 5px;
+    float: left;   
+    font: bold 13px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    border: 0;
+    background: #fff;
+    border-radius: 40px;
+    border-top-style: none;
+}
+
+.search-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+}
+
+.search-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+  padding-left: 20px;
+}
+
+.search-wrapper input:-moz-placeholder {
+    
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.search-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+  border-style: none;
+}   
+
+/* Form submit button */
+.search-wrapper button {
+    overflow: visible;
+    position: relative;
+    float: right;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    height: 40px;
+    width: 110px;
+    font: 13px/40px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    color: #fff;
+    text-transform: uppercase;
+    background: #198cff;
+    border-radius: 40px;
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+}  
+
+.search-wrapper button:hover{    
+     background: #e54040; 
+}  
+
+.search-wrapper button:active,
+.search-wrapper button:focus{  
+    background: #198cff;
+    outline: 0;  
+}
+
+.search-wrapper button:focus:before,
+.search-wrapper button:active:before{
+        border-right-color: #c42f2f;
+}     
+
+.search-wrapper button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+#ADR{
+	color:rgb(30, 30, 90);
+}
+.card {
+        width: 15%;
+        height: 7.5%;
+        margin: 20px;
+        border: 1px solid #333;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(30, 30, 90);
+        text-align: center;
+        padding: 20px;
+        background-color:rgb(30, 30, 90);
+        color:white;
+        transition: all 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 7px 7px 5px rgb(30, 30, 90);
+      }
+     .card h2 {
+        margin-top: 0;
+       
+        font-size: 24px;
+      }
+      .card p {
+        font-size: 18px;
+        color:white;
+        margin-top: 20px;
+      }
+      .price {
+        background-color:rgb(30, 30, 90);
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+        display: inline-block;
+      }
+      .product-info {
+        margin-top: 20px;
+      }

@@ -1,0 +1,71 @@
+@charset "UTF-8";
+body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background:#F2ECFD;
+      }
+ #container {
+        display: grid;
+        margin:0% 6%;
+        grid-template-columns:repeat(4,1fr);
+        width:90%;
+        height:100%;
+      }
+      .card {
+        width: 64%;
+        height: 64%;
+        margin: 20px;
+        border: 1px solid #333;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #ccc;
+        text-align: center;
+        padding: 20px;
+        background-color:white;
+        transition: all 0.3s ease-in-out;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 5px 5px 15px #ccc;
+      }
+      h2 {
+        margin-top: 0;
+        color:rgb(30,30,90);
+        font-size: 24px;
+      }
+      p {
+        font-size: 18px;
+        color: rgb(30,30,90);
+        margin-top: 20px;
+      }
+      .price {
+        color:white;
+        background-color: rgb(30,30,90);
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin-top: 20px;
+        display: inline-block;
+      }
+      .product-info {
+        margin-top: 20px;
+      }
+      #container::-webkit-scrollbar{
+            width: 5px;
+        }
+        #container::-webkit-scrollbar-track{
+            background-color: #f1f1f1;
+        }
+        #container::-webkit-scrollbar-thumb{
+            border-radius: 10px;
+            background-color: #555;
+        }
+        #container:hover:-webkit-scrollbar-thumb{
+            width: 20px;
+        }
+        #container::-webkit-scrollbar-thumb:hover{
+            background-color: #333;
+        }
+        #container::-webkit-scrollbar-corner {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+ html,body{
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+}
+#head{
+	display:flex;
+	justify-content: space-around;
+}
+#chartdiv {
+	 width: 100%;
+     height: 55%;
+	 border:1px solid black;
+	 border-radius:50px;
+	 overflow:hidden;
+	-webkit-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.75);
+      box-shadow: -1px 1px 5px 5px rgba(0,0,0,0.75);
+
+}
